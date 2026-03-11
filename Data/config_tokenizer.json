@@ -1,0 +1,24 @@
+{
+    "tokenizer":["SentencePiece"],
+    "data_config" : {
+        "wikipedia_eng": {
+            "language":"English",
+            "Huggingface":"NeuML/wikipedia-20250123",
+            "GB": 7.09,
+            "num_samples": 100000
+            },
+        "korean_text": {
+            "language":"Korean",
+            "Huggingface":"HAERAE-HUB/KOREAN-WEBTEXT",
+            "GB": 3.46,
+            "num_samples": 100000
+            }
+    },
+    "tokenizer_config": {
+        "vocab_size": 32000,
+        "model_type": "unigram",
+        "character_coverage": 0.9995,
+        "input_sentence_size": 10000000,
+        "shuffle_input_sentence": "True"
+    }
+}
